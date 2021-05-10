@@ -1,0 +1,65 @@
+{
+  "name": "project-mulla",
+  "version": "1.0.0",
+  "description": "Provides a REST interface for the Safaricom Mpesa SOAP API",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test",
+    "develop": "nodemon -w ./server -w index.js -w environment.js --exec npm start",
+    "lint": "eslint --fix ./server ./test",
+    "monitor": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kn9ts/project-mulla.git"
+  },
+  "author": "Eugene Mutai <eugenemutai@gmail.com> (http://twitter.com/kn9ts)",
+  "license": "GNU LESSER GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "email": "eugenemutai@gmail.com",
+    "url": "https://github.com/kn9ts/project-mulla/issues"
+  },
+  "homepage": "https://github.com/kn9ts/project-mulla#readme",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cheerio": "^0.20.0",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.6.7",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "~1.11.0",
+    "js-yaml": "^3.6.1",
+    "moment": "^2.13.0",
+    "morgan": "~1.8.2",
+    "node-uuid": "^1.4.7",
+    "request": "^2.72.0",
+    "serve-favicon": "~2.4.3",
+    "snyk": "^1.30.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^2.0.0",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.2",
+    "nodemon": "^1.9.2",
+    "run-sequence": "^1.2.1",
+    "sinon": "^1.17.4"
+  },
+  "engines": {
+    "node": "^4.3.2",
+    "npm": "^3.9.5"
+  }
+}
